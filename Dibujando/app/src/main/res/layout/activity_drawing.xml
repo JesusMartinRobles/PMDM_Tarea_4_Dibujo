@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.martinrobles.dibujando.CanvasView
+        android:id="@+id/canvasView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tool_panel"
+        android:layout_marginBottom="0dp" />
+
+    <LinearLayout
+        android:id="@+id/tool_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/five_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_buttons_layout"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCirculoAzul"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_btnCirculoAzul"
+            android:drawableBottom="@drawable/circulo_azul"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnCirculoRojo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_btnCirculoRojo"
+            android:drawableBottom="@drawable/circulo_rojo"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnCirculoVerde"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_btnCirculoVerde"
+            android:drawableBottom="@drawable/circulo_verde"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnEstrella"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_btnEstrella"
+            android:drawableBottom="@drawable/imagen_estrella"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnImagenCara"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_btnImagenCara"
+            android:drawableBottom="@drawable/imagen_cara"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nuevo_tipo_fuente"
+            android:textSize="25sp"
+            android:text="@string/button_home" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nuevo_tipo_fuente"
+            android:textSize="25sp"
+            android:text="@string/button_clear" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

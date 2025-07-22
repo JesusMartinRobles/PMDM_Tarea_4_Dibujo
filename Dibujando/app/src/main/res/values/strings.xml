@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dibujando</string>
+    <string name="button_home">Inicio</string>
+    <string name="button_clear">Borrar</string>
+    <string name="desc_btnCirculoAzul">Descripción del botón círculo azul</string>
+    <string name="desc_btnCirculoRojo">Descripción del botón círculo rojo</string>
+    <string name="desc_btnCirculoVerde">Descripción del botón círculo verde</string>
+    <string name="desc_btnEstrella">Descripción del botón estrella</string>
+    <string name="desc_btnImagenCara">Descripción del botón imagen cara</string>
+    <string name="dibujando">Dibujando</string>
+    <string name="comenzar_a_dibujar">Comenzar a dibujar</string>
+</resources>
